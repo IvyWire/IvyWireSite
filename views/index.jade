@@ -1,0 +1,23 @@
+html
+	head
+	script(src='http://code.jquery.com/jquery-latest.min.js')    
+	script(src='bootstrap/js/bootstrap.min.js')
+	script(src='http://malsup.github.io/jquery.cycle.all.js')
+
+	script
+		$(document).ready(function() {
+			$('#pic23').cycle({
+				fx: 'fade'
+			});
+		}); 
+	
+	link(rel='stylesheet', href='/stylesheets/style.css')
+	
+	div#wrap
+		div.container
+			include includes/header.jade
+			
+			body#homePage
+				
+					
+	include includes/footer

@@ -1,0 +1,25 @@
+html
+	head
+	script(src='http://code.jquery.com/jquery-latest.min.js')    
+	script(src='bootstrap/js/bootstrap.min.js')
+
+	link(rel='stylesheet', href='/stylesheets/style.css')
+	div#wrap
+		div.container
+			include includes/header.jade
+		
+			body
+				center
+					h1#aboutHeading Who are we?
+				div.row-fluid.marketing
+					div.span6
+						p.
+							We are a technical solution firm that specializes in software engineering. We 
+							firmly believe in collaboration, innovation and excellence. We strive to provide 
+							the best possible service to our clients. Our services include but are not limited to:
+						ul
+							li Web development and website design
+							li Mobile application development
+							li Website maintenance
+				
+	include includes/footer

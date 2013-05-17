@@ -1,0 +1,17 @@
+{
+	"name": "ivywire",
+	"version": "0.0.1",
+	"private": true,
+	"description": "ivywire packages",
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "3.2.0",
+		"jade": "*"
+	},
+	"subdomain": "ivywire-IvyWireMainSite",
+	"engines": {
+		"node": "0.8.x"
+	}
+}
