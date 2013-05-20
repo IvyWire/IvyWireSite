@@ -1,6 +1,6 @@
 	body {
 		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		background-color:#F9F9F9;
+		background-image:url('/images/back1.png');
 		padding-bottom:40px;
 	}
 	
@@ -13,12 +13,21 @@
 		margin-bottom:40px;
 	}
 	
-	
+	.pagePage {
+		margin-top: 20px;
+		margin-bottom:30px;
+		box-shadow: 5px 5px 3px #888888;
+		padding:10px;
+		padding-top:20px;
+		background-color:#FFFFFF;
+	}	
+
 	/* MARKETING CONTENT
     -------------------------------------------------- */
 
     /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
+	
+	.marketing .span4 {
       text-align: center;
     }
     .marketing h2 {
