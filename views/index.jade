@@ -1,23 +1,47 @@
+doctype html
 html
 	head
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		include includes/header.jade
+		
+		<!-- Carousel starts -->
+		
+		div#myCarousel.carousel.slide
+			div.carousel-inner
+				div.item.active
+					img(src='/images/slide01.jpg')
+					div.container
+						div.carousel-caption
+							h1 Example
+							p.lead AAAAAAaA
+				div.item
+					img(src='/images/slide02.jpg')
+					div.container
+						div.carousel-caption
+							h1 Example
+							p.lead AAAAAAaA
+				div.item
+					img(src='/images/slide03.jpg')
+					div.container
+						div.carousel-caption
+							h1 Example
+							p.lead AAAAAAaA
+			a(href='#myCarousel', data-slide='prev', class='left carousel-control')
+			a(href='#myCarousel', data-slide='next', class='right carousel-control') 
+						
+		<!-- /.carousel -->	
+	
+	
 	script(src='http://code.jquery.com/jquery-latest.min.js')    
-	script(src='bootstrap/js/bootstrap.min.js')
-	script(src='http://malsup.github.io/jquery.cycle.all.js')
-
+	script(src='/js/bootstrap.min.js')
+	script(src='/js/ie-bootstrap-carousel.min.js')
+	
 	script
-		$(document).ready(function() {
-			$('#pic23').cycle({
-				fx: 'fade'
-			});
-		}); 
-	
-	link(rel='stylesheet', href='/stylesheets/style.css')
-	
-	div#wrap
-		div.container
-			include includes/header.jade
-			
-			body#homePage
-				
-					
-	include includes/footer
+		!function ($) {
+			$(function(){
+				// carousel demo
+			$('#myCarousel').carousel()
+			})
+			}(window.jQuery)
