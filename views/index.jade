@@ -3,7 +3,7 @@ html
 	head
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
-	body.mainheight
+	body.mainPage
 		include includes/header.jade
 		
 		<!-- Carousel starts -->
@@ -37,6 +37,7 @@ html
 		div.container.marketing
 			div.row
 				div.span4
+					img(src='/images/head3.png')
 					h2 Our Process
 					p.
 						Be it websites or apps, we have ourselvers a clear-cut process we follow in order to give you the 
@@ -44,7 +45,8 @@ html
 						process has been a blahblahblahblahblahblahblah
 					p. 
 						a(href='#', class='btn') Read more
-				div.span4						
+				div.span4
+					img(src='/images/head2.png')				
 					h2 Website Development
 					p.
 						We believe in aiming for nothing short of the best when designing and developing your website. 
@@ -53,13 +55,19 @@ html
 					p. 
 						a(href='/web_development/', class='btn') Read more
 				div.span4
+					img(src='/images/head1.png')
 					h2 Mobile App Development
 					p.
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 					p. 
 						a(href='#', class='btn') Read more
 			
+			hr.featurette-divider
 			
+			div.row
+				div
+					p Interested in working with us? Contact us now for your free quote!
+					a(href='/contact_us/', class='btn') Contact Us
 			
 	script(src='http://code.jquery.com/jquery-latest.min.js')    
 	script(src='/js/bootstrap.min.js')
