@@ -3,7 +3,7 @@ html
 	head
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
-	body
+	body.mainheight
 		include includes/header.jade
 		
 		<!-- Carousel starts -->
@@ -11,13 +11,13 @@ html
 		div#myCarousel.carousel.slide
 			div.carousel-inner
 				div.item.active
-					img(src='/images/slide01.jpg')
+					img(src='/images/slide1.jpg')
 					div.container
 						div.carousel-caption
 							h1 Example
 							p.lead AAAAAAaA
 				div.item
-					img(src='/images/slide02.jpg')
+					img(src='/images/slide2.jpg')
 					div.container
 						div.carousel-caption
 							h1 Example
@@ -30,48 +30,37 @@ html
 							p.lead AAAAAAaA
 			a(href='#myCarousel', data-slide='prev', class='left carousel-control')
 			a(href='#myCarousel', data-slide='next', class='right carousel-control') 
-						
+			
 		<!-- /.carousel -->	
 	
 	
 		div.container.marketing
 			div.row
 				div.span4
-					h2 Heading
+					h2 Our Process
 					p.
-						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+						Be it websites or apps, we have ourselvers a clear-cut process we follow in order to give you the 
+						best service possible and ensure that you leave with the product you desired. This three-step 
+						process has been a blahblahblahblahblahblahblah
 					p. 
 						a(href='#', class='btn') Read more
-				div.span4
-					h2 Heading
+				div.span4						
+					h2 Website Development
 					p.
-						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+						We believe in aiming for nothing short of the best when designing and developing your website. 
+						We will provide you with a talented team that will work closely with you to provide you a 
+						comfortable experience while still keeping you well-informed every step of the way.
 					p. 
-						a(href='#', class='btn') Read more
+						a(href='/web_development/', class='btn') Read more
 				div.span4
-					h2 Heading
+					h2 Mobile App Development
 					p.
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 					p. 
 						a(href='#', class='btn') Read more
 			
-			h1 Our Process
 			
-			hr.featurette-divider
-			div.featurette
-				h2.featurette-heading Heading <span class='muted'> One </span>
-				p.lead.
-					aaaaaaaaa
-			hr.featurette-divider
-			div.featurette
-				h2.featurette-heading Heading <span class='muted'> Two </span>
-				p.lead.
-					aaaaaaaaa
-			hr.featurette-divider
-			div.featurette
-				h2.featurette-heading Heading <span class='muted'> Three </span>
-				p.lead.
-					aaaaaaaaa
+			
 	script(src='http://code.jquery.com/jquery-latest.min.js')    
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/ie-bootstrap-carousel.min.js')
