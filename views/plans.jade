@@ -2,48 +2,50 @@ html
 	head
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/style2.css')
 	
-	body
+	body.back1
 		include includes/header.jade
 		div.pageHeading
-		div.container.pagePage.pagePage2 
-			div.page-header
-				center
-					h1 Our Process
-					h1.
-						<small> At IvyWire, we have a simple three-step system that you may all be familiar with: 
-						ctrl, alt, delete. We work as the task manager to your frozen or unresponsive ideas and fix 
-						them for you. </small>
+		div.container.pageHead2
+			h1 Our Process
+		div.container.pagePage.gray2
+			div.headArea
+				h1 The Process
+			div.headCaption
+				p.
+					At IvyWire, we have a simple three-step system that you may all be familiar with: 
+					ctrl, alt, delete. We work as the task manager to your frozen or unresponsive ideas and fix 
+					them for you. 
+			div.featurette
+				div.pagePage2
+					img(src='/images/bullet1-big.png', class='featurette-image pull-right')
+					h2.featurette-heading Step One: <span class='muted'> Control </span>
+					p.lead.style2.
+						This is the annoying part where you meet with us, have a consultation, get a quote; all that 
+						formal junk that is necessary to make sure that the dog you wanted in the beginning doesn't turn 
+						into an expensive dragon at the end.
+						</span>
+
+			div.featurette.gray
+				div.pagePage2
+					img(src='/images/bullet2-big.png', class='featurette-image pull-left')
+					h2.featurette-heading Step Two: <span class='muted'> Alter </span>
+					p.lead.style2.
+						Once a plan is establish, we begin alterations to ensure that the end result is both accurate, 
+						cost-efficient, and visually appealing. Basically, we are the fairy godmothers, working to make 
+						all of your dreams come true.
+						</span>
 
 			div.featurette
-				img(src='/images/bullet1-big.png', class='featurette-image pull-right')
-				h2.featurette-heading Step One: <span class='muted'> Control </span>
-				p.lead.
-					<span style='letter-spacing:1px; line-height:150%;'>
-					This is the annoying part where you meet with us, have a consultation, get a quote; all that 
-					formal junk that is necessary to make sure that the dog you wanted in the beginning doesn't turn 
-					into an expensive dragon at the end.
-					</span>
-			hr.featurette-divider
-			div.featurette
-				img(src='/images/bullet2-big.png', class='featurette-image pull-left')
-				h2.featurette-heading Step Two: <span class='muted'> Alter </span>
-				p.lead.
-					<span style='letter-spacing:1px; line-height:150%;'>
-					Once a plan is establish, we begin alterations to ensure that the end result is both accurate, 
-					cost-efficient, and visually appealing. Basically, we are the fairy godmothers, working to make 
-					all of your dreams come true.
-					</span>
-			hr.featurette-divider
-			div.featurette
-				img(src='/images/bullet3-big.png', class='featurette-image pull-right')
-				h2.featurette-heading Step Three: <span class='muted'> Delete </span>
-				p.lead.
-					<span style='letter-spacing:1px; line-height:150%;'>
-					With any major project, there is always a potential for bugs to surface. Whether it's a bug in the 
-					code, a little typo, or an actual bug on the computer screen, we make sure we clean up after ourselves 
-					so you don't have to.
-					</span>
+				div.pagePage2
+					img(src='/images/bullet3-big.png', class='featurette-image pull-right')
+					h2.featurette-heading Step Three: <span class='muted'> Delete </span>
+					p.lead.style2.
+						With any major project, there is always a potential for bugs to surface. Whether it's a bug in the 
+						code, a little typo, or an actual bug on the computer screen, we make sure we clean up after ourselves 
+						so you don't have to.
+						</span>
 			hr
 			include includes/footer
 	script(src='http://code.jquery.com/jquery-latest.min.js')    

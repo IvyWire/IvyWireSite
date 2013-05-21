@@ -1,6 +1,6 @@
 	body {
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		background-color:#DFCACA;
+		font-family: "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+		background-color:#DCDCDC;
 		padding-bottom:40px;
 	}
 	
@@ -16,8 +16,8 @@
 	.pagePage {
 		margin-top: 20px;
 		margin-bottom:30px;
-		box-shadow: 5px 5px 3px #888888;
-		padding:10px;
+		box-shadow: 1px 1px 3px 2px #888888;
+		border-radius: 8px;
 		padding-top:20px;
 		background-color:#FFFFFF;
 	}
