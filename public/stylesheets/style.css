@@ -245,7 +245,6 @@
     }
 
     .carousel-caption {
-      background-color: transparent;
       position: static;
       max-width: 550px;
       padding: 0 20px;
