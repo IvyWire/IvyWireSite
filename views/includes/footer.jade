@@ -1,3 +1,40 @@
+div.slideout
+	div.slidecontent
+		h4 Get in touch now!
+		p Interested in working with us? E-mail us now to get a quote/set up an appointment!
+		br
+		div
+			form(name="clientForm", action="mailto:ivywireline@gmail.com", method="post", enctype="text/plain")
+				div#clientName
+					label(for='name')
+						h4 Name
+					input(type="text", name="clientName", placeholder="FirstName LastName")
+				div#clientNumber
+					h4 Contact Phone Number
+					input(type="text", name="clientNumber", placeholder="123-456-7890")
+				div#clientEmail
+					h4 Contact E-mail
+					input(type="text", name="clientEmail", placeholder="yourid@domain.ca")
+				div#clientPlans
+					h4 Describe your plans/summarize your project
+					textarea(name="clientPlans", form="clientForm",
+						placeholder="Pull corner to lengthen")
+				
+				div#clientSubmit
+					input(type="submit")
+	div.clickme
+		center Contact us!
+script(src='/js/jquery-1.9.1.js')
+script
+	$(function () {
+		$(".clickme").click(function () {
+			if($(this).parent().css("left") == "-500px"){
+			$(this).parent().animate({left:'0px'}, {queue: false, duration: 500});
+		}else {
+			$(this).parent().animate({left:'-500px'}, {queue: false, duration: 500});}
+		});
+	});
+
 footer
 	p.pull-right
 		a(href='#') Go to top

@@ -1,35 +1,36 @@
 html
 	head
-	script(src='http://code.jquery.com/jquery-latest.min.js')    
-	script(src='bootstrap/js/bootstrap.min.js')
-	
-	link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
 
-	div#wrap
-		div.container
-			include includes/header.jade
-			
-			body
-				div.topContact#contacTwo
-					h1 Get in touch now! 
-					p Interested in working with us? E-mail us now to get a quote/set up an appointment!
-				
-				div#contacTwo
-					form(action='/contact', name='contactus', id='contactus', method='post')
-						div#clientName
+	body
+		include includes/header.jade
+		
+		div.pageHeading
+		div.container.pagePage
+			div.page-header
+				h1 Get in touch now!
+			p Interested in working with us? E-mail us now to get a quote/set up an appointment!
+			br
+			div
+				form(name="clientForm", action="mailto:ivywireline@gmail.com", method="post", enctype="text/plain")
+					div#clientName
+						label(for='name')
 							h4 Name
-							input(name='name', type='text', value='', id='name', placeholder="FirstName LastName")
-						div#clientNumber
-							h4 Contact Phone Number
-							input(type="text", name="phone", placeholder="123-456-7890")
-						div#clientEmail
-							h4 Contact E-mail
-							input(name='email', type='text', value='', id='email', placeholder="yourid@domain.ca")
-						div#clientPlans
-							h4 Describe your plans/summarize your project
-							textarea(name='message', id='message', placeholder="Pull corner to lengthen")
-						
-						div#clientSubmit
-							input(type='submit', value='Send')
-						
-	include includes/footer
+						input(type="text", name="clientName", placeholder="FirstName LastName")
+					div#clientNumber
+						h4 Contact Phone Number
+						input(type="text", name="clientNumber", placeholder="123-456-7890")
+					div#clientEmail
+						h4 Contact E-mail
+						input(type="text", name="clientEmail", placeholder="yourid@domain.ca")
+					div#clientPlans
+						h4 Describe your plans/summarize your project
+						textarea(name="clientPlans", form="clientForm",
+							placeholder="Pull corner to lengthen")
+					
+					div#clientSubmit
+						input(type="submit")
+			hr
+			include includes/footer
+	script(src='/js/bootstrap.min.js')
