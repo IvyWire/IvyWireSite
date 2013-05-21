@@ -7,6 +7,16 @@ html
 	body.back1
 		include includes/header.jade
 		div.pageHeading
+		div.tabbable1
+				ul.nav.nav-stacked.span3
+					li.active#tab1
+						p Step 1
+						hr
+					li#tab2
+						p Step 2
+						hr
+					li#tab3
+						p Step 3
 		div.container.pageHead2
 			h1 Our Process
 		div.container.pagePage.gray2
@@ -17,7 +27,7 @@ html
 					At IvyWire, we have a simple three-step system that you may all be familiar with: 
 					ctrl, alt, delete. We work as the task manager to your frozen or unresponsive ideas and fix 
 					them for you. 
-			div.featurette
+			div.featurette#feat1
 				div.pagePage2
 					img(src='/images/bullet1-big.png', class='featurette-image pull-right')
 					h2.featurette-heading Step One: <span class='muted'> Control </span>
@@ -27,7 +37,7 @@ html
 						into an expensive dragon at the end.
 						</span>
 
-			div.featurette.gray
+			div.featurette.gray#feat2
 				div.pagePage2
 					img(src='/images/bullet2-big.png', class='featurette-image pull-left')
 					h2.featurette-heading Step Two: <span class='muted'> Alter </span>
@@ -37,7 +47,7 @@ html
 						all of your dreams come true.
 						</span>
 
-			div.featurette
+			div.featurette#feat3
 				div.pagePage2
 					img(src='/images/bullet3-big.png', class='featurette-image pull-right')
 					h2.featurette-heading Step Three: <span class='muted'> Delete </span>
@@ -50,3 +60,36 @@ html
 			include includes/footer
 	script(src='http://code.jquery.com/jquery-latest.min.js')    
 	script(src='/js/bootstrap.min.js')
+	script
+		$("document").ready(function() {			
+			$('#tab1').click(function(){
+				$('html, body').animate({
+					scrollTop: $("#feat1").offset().top
+				}, 500);
+			});	
+			$('#tab2').click(function(){
+				$('html, body').animate({
+					scrollTop: $("#feat2").offset().top
+				}, 500);				   
+			});
+			$('#tab3').click(function(){
+				$('html, body').animate({
+					scrollTop: $("#feat3").offset().top
+				}, 500);				   
+			});
+		});
+	script
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scrollTop = 90;
+				if($(window).scrollTop() >= scrollTop){
+					$('.tabbable1').css({
+						position : 'fixed',
+						top : '100'
+					});
+				}
+				if($(window).scrollTop() < scrollTop){
+					$('.tabbable1').removeAttr('style');  
+				}
+			})
+		})
