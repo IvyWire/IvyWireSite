@@ -2,6 +2,19 @@
 	background-image:url('/images/web.png');
 }
 
+.back2{
+	background-image:url('/images/web2.png');
+}
+
+.back3{
+
+}
+
+.back4{
+
+
+}
+
 .gray {
 	background-color:#F2F2F2;
 }
@@ -18,10 +31,11 @@
 
 .pageHead2 {
 	color:#FFFFFF;
+	text-shadow: #000000 0.1em 0.1em 0.2em;
 }
 
 .pageHead2 h1 {
-	font-size:70px;
+	font-size:50px;
 	margin-bottom:30px;
 }
 
