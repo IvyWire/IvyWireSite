@@ -13,25 +13,24 @@ html
 				h1 Get in touch now!
 			p Interested in working with us? E-mail us now to get a quote/set up an appointment!
 			br
-			div
-				form(name="clientForm", action="mailto:ivywireline@gmail.com", method="post", enctype="text/plain")
+			div		
+				form(action='/contact', name='contactus', id='contactus', method='post')
 					div#clientName
 						label(for='name')
 							h4 Name
-						input(type="text", name="clientName", placeholder="FirstName LastName")
+						input(name='name', type='text', value='', id='name', placeholder="FirstName LastName")
 					div#clientNumber
 						h4 Contact Phone Number
-						input(type="text", name="clientNumber", placeholder="123-456-7890")
+						input(type="text", name="phone", placeholder="123-456-7890")
 					div#clientEmail
 						h4 Contact E-mail
-						input(type="text", name="clientEmail", placeholder="yourid@domain.ca")
+						input(name='email', type='text', value='', id='email', placeholder="yourid@domain.ca")
 					div#clientPlans
 						h4 Describe your plans/summarize your project
-						textarea(name="clientPlans", form="clientForm",
-							placeholder="Pull corner to lengthen")
-					
+						textarea(name='message', id='message', placeholder="Pull corner to lengthen")
+
 					div#clientSubmit
-						input(type="submit")
+						input(type='submit', value='Send')
 			hr
-			include includes/footer
+			include includes/footer2
 	script(src='/js/bootstrap.min.js')

@@ -1,15 +1,15 @@
+doctype html
 html
 	head
-	script(src='http://code.jquery.com/jquery-latest.min.js')    
-	script(src='bootstrap/js/bootstrap.min.js')
-	
-	link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
-	link(rel='stylesheet', href='/stylesheets/style.css')
-	div#wrap
-		div.container
-			include includes/header.jade
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+
+	body
+		include includes/header.jade
+		
+		div.pageHeading
+		div.container.pagePage
+			h2 Your message was sent ;)
 			
-			body
-				p sent ;)
-						
-	include includes/footer
+			hr
+			include includes/footer2
