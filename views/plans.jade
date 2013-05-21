@@ -5,27 +5,29 @@ html
 	
 	body
 		include includes/header.jade
-		div.container
-			hr.featurette-divider
-			div.row
+		div.pageHeading
+		div.container.pagePage
+			div.page-header
 				center
-					h1 Our Process
-		
+					h1 Our Processs
 			div.featurette
+				img(src='/images/bullet1-big.png', class='featurette-image pull-right')
 				h2.featurette-heading Heading <span class='muted'> One </span>
 				p.lead.
 					aaaaaaaaa
 			hr.featurette-divider
 			div.featurette
+				img(src='/images/bullet2-big.png', class='featurette-image pull-left')
 				h2.featurette-heading Heading <span class='muted'> Two </span>
 				p.lead.
 					aaaaaaaaa
 			hr.featurette-divider
 			div.featurette
+				img(src='/images/bullet3-big.png', class='featurette-image pull-right')
 				h2.featurette-heading Heading <span class='muted'> Three </span>
 				p.lead.
 					aaaaaaaaa
-			hr		
+			hr
 			include includes/footer
 	script(src='http://code.jquery.com/jquery-latest.min.js')    
 	script(src='/js/bootstrap.min.js')
