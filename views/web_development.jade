@@ -4,46 +4,45 @@ html
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/style2.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Bitter:400italic,400')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,400italic,500,700,300italic')
 		
-	body.back3
+	body.mainPage
 		include includes/header.jade
 		
-		div.pageHeading
-		div.container.pageHead2
-			h1 Web Services
-			
-		div.container.pagePage.pagePage2
-			div.gray
+		div.container
+		center
+				div.indexHeading
+					div.container.paddingHead
+						img(src='/images/weblogo2.png')
+						h1 Web Services
+			div.container
+				center
+					h1.indexHead2.zeroTop Websites done <span style='color:#43b04d;'> right </span>
+				div.row.topBody
+					div.span6.indexCaption3
+						p.
+							<span style='font-size:20px;color:#43b04d'> Why do I need a website? </span> <br/>
+							<span style='font-weight:300'>
+							In this day and age, the Internet is the new media king. In order to take full advantage of this 
+							businesses are looking for websites that can clearly advertise their products while providing 
+							customers with a convenient communication platform to use. We know this and we take many steps 
+							to ensure that your website can do just that. 
+							</span>
+					div.span4.indexCaption3.whiteBox
+						p <span style='font-size:20px;color:#43b04d'> Choose us if you want a site that is: </span>
+						ul
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Efficient
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Fast
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span>  
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span>  
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span>  Worth the money you put in
+				center
+					h1.indexHead2.zeroTop <span style='color:#43b04d;'> Development </span> you can depend on
+				div.pageHeading
 				
-			div
-				h2.muted.webFont Every business needs a website.
-				div.span8
-					p In this day and age, the Internet is the new media king. Just about everybusiness out there is taking advantage of this. Why aren't you? Having a website brings you:
-						ul
-							li Boundless advertising oppurtunities
-							li A convenient communication platform
-							li Easy-access information storage
-							li Market expansion
-			hr
-			div
-				h2.muted.webFont  Designs that just work.
-				div.span8
-					p Our professional web design team will take every effort to understand your business and target market in order to suggest designs for maximum appeal. 
-						We believe in lean and well-organized designs that are easy to navigate. Ultimately, our designs will:
-						ul
-							li Distinguish your business from your competitors
-							li Provide your customers convenience in browsing
-							li Be visually appealing
-			hr
-			div
-				h2.muted Development you can depend on.
-				div.span8
-					p The IvyWire web design team will work with our clients until they are fully satisfied. We will:
-						ul
-							li Be up-to-date with the most current and advanced software technology
-							li Deliver products on time and according to the contract
-							li Respond to any concerns from our clients
-			hr
-			include includes/footer.jade
+				div.webTabsLogos
+					
+		include includes/footer.jade
 	script(src='/js/bootstrap.min.js')
 	

@@ -79,5 +79,251 @@
 .webFont {
 	color: #0B610B; 
 	text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.navbar-inner {
+    background-color: #151515;
+    background-image: none;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.067);
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.navbar2 .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+.navbar2 .nav.pull-right {
+  float: right;
+  margin-right: 30px;
+}
+.navbar2 .nav > li {
+  float: left;
+  padding-left:3px;
+  padding-right:3px;
+}
+.navbar2 .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #FAFAFA;
+  font-size:14px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight:bold;
+}
+
+.navbar2 .nav > li > a:focus,
+.navbar2 .nav > li > a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.indexHead {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 60px;
+	margin-top:100px;
+	margin-bottom:60px;
 	
+}
+
+.indexHead2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 53px;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+.indexCaption{
+	margin:30px;
+	margin-left:100px;
+	margin-right:100px;
+	/*background-color:#F2F2F2;*/
+	padding:30px;
+	line-height:2em;
+	/*box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.4);*/
+	font-family: 'Ubuntu', sans-serif;
+	/*font-style:italic;*/
+}
+
+.zeroBottom {
+	margin-bottom:30px;
+	padding-bottom:0px;
+}
+.indexCaption p {
+	font-size:16px;
+	letter-spacing:1px;
+}
+
+.indexCaption h1 {
+	font-size:22px;
+	color: #585858;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+.indexCaption2{
+	margin-top:150px;
+	/*background-color:#F2F2F2;*/
+	font-family: 'Ubuntu', sans-serif;
+	/*box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.4);*/
+	padding-bottom:20px;
+	padding-top:15px;
+	margin-bottom:60px;
+}
+.whiteBox{
+	margin-left:120px;
+	margin-right:10px;
+	/*box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.4);*/
+	/*background-color:#F2F2F2;*/
+	padding-right:0px;
+}
+.indexCaption2 p{
+	padding: 30px;
+	line-height:1.5em;
+	font-size:15px;
+	font-family: 'Ubuntu', sans-serif;
+	letter-spacing:1px;
+}
+
+.indexCaption3  p{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:18px;
+	letter-spacing:1px;
+	line-height:1.8em;
+	padding-right:0px;
+}
+
+.indexCaption3 ul{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:18px;
+	letter-spacing:1px;
+	line-height:1.8em;
+	margin-top:10px;
+	padding-right:0px;
+}
+
+.indexCaption3 {
+	margin-top:0px;
+	padding:10px;
+	padding-right:0px;
+}
+.indexCaption3 li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left:30px;
+	list-style-type: none;
+	padding-right:0px;
+	font-size:15px;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+.footer2 {
+	background-color: #151515;
+	color: #FAFAFA;
+	padding-left: 0px;
+	font-family: 'Bitter', serif;
+	margin-bottom:0px;
+}
+.footer2 h1{
+	color: #FFFFFF;
+	font-size: 18px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.paddingleftzero{
+	padding-left: 0px;
+}
+
+.footer2 p{
+	font-size:16px;
+	color: #BDBDBD;
+	line-height:1.5em;
+}
+
+.footer3 {
+	background-color: #1C1C1C;
+	color: #FAFAFA;
+	padding-top:20px;
+	font-family: 'Bitter', serif;
+	margin-bottom:0px;
+}
+
+.footer3 h1{
+    color: #FFFFFF;
+	font-size: 18px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.footerRow {
+	font-family: 'Ubuntu', sans-serif;
+	padding-top:10px;
+	padding-bottom:1px;
+}
+.indexHeading {
+	background-color: #1C1C1C;
+	color: #FAFAFA;
+	padding-top:50px;
+	padding-bottom:0px;
+	margin-top:10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 53px;
+}
+
+.indexHeading h1 {
+	font-size: 53px;
+	float:left;
+	margin-top:60px;
+}
+
+.indexHeading img{
+	float:left;
+	margin-left:250px;
+}
+
+.paddingHead{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.topBody{
+	margin-top:100px;
+}
+
+.zeroTop{
+	margin-top:100px;
+	margin-bottom:0px;
+	margin-right:100px;
+}
+
+.secondTop {
+	font-size:40px;
+	color: #848484;
+	margin-bottom:50px;
+	margin-top:25px;
+	padding-left:150px;
+}
+
+#indexBox{
+	height:600px;
+	width:100%;
+	background-color:#F2F2F2;
+}
+.webTabs{
+	
+}
+
+.webTabsLogos{
+
+
 }

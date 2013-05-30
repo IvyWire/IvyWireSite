@@ -3,81 +3,60 @@ html
 	head
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/style2.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Bitter:400italic,400')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu')
 		script(src='/js/jquery-1.9.1.js')
 	body.mainPage
 		include includes/header.jade
 		
-		<!-- Carousel starts -->
-		
-		div#myCarousel.carousel.slide
-			div.carousel-inner
-				div.item.active
-					img(src='/images/slide1.jpg')
-					div.container
-						div.carousel-caption
-							h1 Heading to attract attention
-							h1.
-								<small> <span style='font-size: 19px; letter-spacing: 2px;'>
-								IvyWire is a student-run initiative that aims to satisfy clients with what we know best: 
-								cracking deals and solving all of your computer-related needs. We represent the generation 
-								of tech-savvy, yet financially-impaired individuals tired of watching people get ripped off for services 
-								that we can do ourselves (for cheaper). Thus with no money and too much time on our hands, we will offer you 
-								both our services and our souls to make sure that the job is done and done well.</span> </small>
-				div.item
-					img(src='/images/slide2.jpg')
-					div.container
-						div.carousel-caption
-							h1 Heading to attract attention
-							h1.
-								<small> <span style='font-size: 19px; letter-spacing: 2px;'>
-								</span> </small>
-				div.item
-					img(src='/images/slide03.jpg')
-					div.container
-						div.carousel-caption
-							h1 Heading to attract attention
-							h1.
-								<small> <span style='font-size: 19px; letter-spacing: 2px;'>
-								</span> </small>
-			a(href='#myCarousel', data-slide='prev', class='left carousel-control')
-			a(href='#myCarousel', data-slide='next', class='right carousel-control') 
-			
-		<!-- /.carousel -->	
-	
-	
+		div.container
+			div.pageHeading
+			div.whiteBox#indexBox
+				p slider here
+				
 		div.container.marketing
 			div.row
-				div.span4
+				center
+					h1.indexHead We build <span style='color:#43b04d'> websites</span> and <span style='color:#43b04d'> mobile apps </span>
+			div.row.indexCaption
+				h1 <span style='font-size:23px;color:#43b04d'>Who are we? </span>
+				p.
+					IvyWire is a student-run initiative that aims to satisfy clients with what we know best: 
+					cracking deals and solving all of your computer-related needs. We represent the generation 
+					of tech-savvy, yet financially-impaired individuals tired of watching people get ripped off for services 
+					that we can do ourselves (for cheaper). Thus with no money and too much time on our hands, we will offer you 
+					both our services and our souls to make sure that the job is done and done well.
+			div.row
+				div.span4.indexCaption2
 					img(src='/images/head3.png')
-					h2 Our Process
+					h2 <span style='color:#43b04d'> Our Process </span>
 					p.
 						Be it websites or apps, we have ourselvers a clear-cut process we follow in order to give you the 
-						best service possible and ensure that you leave with the product you desired. This three-step 
-						process has been a blahblahblahblahblahblahblah
+						best service possible and ensure that you leave with the full product you desired.
 					a(href='/plans/', class='btn') Read more
-				div.span4
+				div.span4.indexCaption2
 					img(src='/images/head2.png')				
-					h2 Website Development
+					h2 <span style='color:#43b04d'> Website Development </span>
 					p.
-						We believe in aiming for nothing short of the best when designing and developing your website. 
-						We will provide you with a talented team that will work closely with you to provide you a 
+						We're happy to provide you with a talented team that will work closely with you to provide you a 
 						comfortable experience while still keeping you well-informed every step of the way.
 					a(href='/web_development/', class='btn') Read more
-				div.span4
+				div.span4.indexCaption2
 					img(src='/images/head1.png')
-					h2 Mobile App Development
+					h2 <span style='color:#43b04d'> Mobile Apps </span>
 					p.
-						Smartphones and tablets have integrated themselves to an important part of people's everyday 
-						lives. The mobile marketplace blahblah
+						The mobile marketplace is an excellent oppurtunity for modern investors. If you have an idea, send us an 
+						email. We can help you to make your idea into a reality and a mobile app market hit.
 					a(href='mobile_app_development', class='btn') Read more 
-			hr		
-			include includes/footer 
+		include includes/footer
+	
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/ie-bootstrap-carousel.min.js')
-	
 	script
 		$(document).ready(function(){
 			$('.carousel').carousel({
 				interval: 30000
 				});
 			});
+			

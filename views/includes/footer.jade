@@ -22,7 +22,24 @@ div.slideout
 				div#clientSubmit
 					input(type='submit', value='Send')
 	div.clickme
-		center Contact us!
+		center.
+			Contact us!
+		
+div.footer3
+	div.container
+		div.row
+			div.span4
+				h1 Our Team
+			div.span4
+				h1 Contact Information
+			div.span4
+				h1 Email Us
+div.footer2
+	div.footerRow
+		center
+			p.
+				&#169; IvyWire Technical Solutions &#8226; Privacy Policy &#8226; Terms of Use
+
 script(src='/js/jquery-1.9.1.js')
 script(src='/js/jquery.html5-placeholder-shim.js')
 script
@@ -34,10 +51,3 @@ script
 			$(this).parent().animate({left:'-500px'}, {queue: false, duration: 500});}
 		});
 	});
-
-footer
-	p.pull-right
-		a(href='#') Go to top
-	p Copyright 2013 Ivywire 
-		a(href='#') Privacy 
-		a(href='#') Terms 
