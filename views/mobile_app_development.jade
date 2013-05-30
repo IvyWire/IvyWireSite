@@ -3,38 +3,37 @@ html
 	head
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/style2.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Bitter:400italic,400')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu')
 	
 	body
 		include includes/header.jade
 		
-		div.pageHeading
-		div.container.pagePage
-			div.page-header
-				h1 Mobile App Development <small> You can be a digimon too. </small>
-			div.tabbable
-				ul.nav.nav-tabs
-					li.active 
-						a(href='#tab1', data-toggle='tab') Android
-					li 
-						a(href='#tab2', data-toggle='tab') iOS
-					li 
-						a(href='#tab3', data-toggle='tab') Windows
-					li 
-						a(href='#tab4', data-toggle='tab') BlackBerry
-			div.tab-content
-				div.tab-pane.active#tab1
-					h1 <small> One market, many oppurtunities.</small>
-					div.well
-						p.
-							The Android OS is one of the biggest mobile OS.
-							
-				div.tab-pane#tab2
-					p Currently, we do not provide support for iOS apps. Future support is in the works.
-				div.tab-pane#tab3
-					p Currently, we do not provide support for Windows apps. Future support is in the works.
-				div.tab-pane#tab4
-					p Currently, we do not provide support for BlackBerry apps. Future support is in the works.
-				hr
-				include includes/footer 
+		center
+				div.indexHeading#mobileAppHead
+					div.container.paddingHead
+						img(src='/images/weblogo2.png')
+						h1 Mobile Apps
+		div.container
+			center
+				h1.indexHead2 Catch Phrase <span style='color:#43b04d;'>Here</span>
+			div.row.topBody
+				div.span6.indexCaption3
+					p.
+						<span style='font-size:20px;color:#43b04d'> Everyone else is doing it -- why aren't you?</span> <br/>
+						<span style='font-weight:300'>
+						blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+						blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+						blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+						</span>
+					ul
+						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> blah</span>
+						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> blah </span>
+						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> blah</span>
+						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> blah</span>
+			center
+				h1.indexHead2.zeroTop Catch Phrase <span style='color:#43b04d;'>Here</span>
+		include includes/footer 
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
