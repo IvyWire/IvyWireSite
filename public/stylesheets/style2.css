@@ -117,9 +117,27 @@
 
 .navbar2 .nav > li > a:focus,
 .navbar2 .nav > li > a:hover {
-  color: #333333;
   text-decoration: none;
+  background-color:#151515;
 }
+
+.navbar2 .nav > li#Home > a:focus,
+.navbar2 .nav > li#Home > a:hover {
+	color: #43b04d;
+}
+
+.navbar2 .nav > li#Web > a:focus,
+.navbar2 .nav > li#Web > a:hover {
+	color: #00BFFF;
+}
+
+.navbar2 .nav > li#Mobile > a:focus,
+.navbar2 .nav > li#Mobile > a:hover {
+	color: #FF4000;
+}
+
+
+
 
 .indexHead {
 	font-family: 'Ubuntu', sans-serif;
@@ -452,5 +470,17 @@
 
 .pageHeading4{
 	margin-top:750px;
+}
 
+.indexBoxSet{
+	float:left;
+	width: 400px;
+}
+
+.increaseSpacing {
+	line-height:2em;
+}
+
+.increaseSpacing p{
+	line-height:2em;
 }
