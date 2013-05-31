@@ -19,6 +19,49 @@ html
 		div.container
 			center
 				h1.indexHead2 Catch Phrase <span style='color:#43b04d;'>Here</span>
+				
+			div.round-border
+				h2 Jquery Toggle() to hide/show collapse content
+				div
+					center
+						button#nav-toggle1.nav-toggle(href='#collapse1')
+							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
+						button#nav-toggle2.nav-toggle(href='#collapse2')
+							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
+						button#nav-toggle3.nav-toggle(href='#collapse3')
+							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
+						button#nav-toggle4.nav-toggle(href='#collapse4')
+							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
+						br
+						img#arrow1(src='/images/arrow-up.png')
+						img#arrow2(src='/images/arrow-up.png')
+						img#arrow3(src='/images/arrow-up.png')
+						img#arrow4(src='/images/arrow-up.png')
+					
+					div#arrow1
+						img.arrow-images(src='/images/arrow-up.png')
+					div#arrow2
+						img.arrow-images(src='/images/arrow-up.png')
+					div#arrow3
+						img.arrow-images(src='/images/arrow-up.png')
+					div#arrow4
+						img.arrow-images(src='/images/arrow-up.png')
+					
+					#collapse1.collapse
+						h2 Heading 1
+						p Bla bla bla bla
+					#collapse2.collapse(style='display: none;')
+						h2 Heading 2
+						p Bla bla bla bla number 2
+					#collapse3.collapse(style='display: none;')
+						h2 Heading 3
+						p Bla bla bla bla number 3
+					#collapse4.collapse(style='display: none;')
+						h2 Heading 4
+						p Bla bla bla bla number
+						p something
+						p something more
+			
 			div.row.topBody
 				div.span6.indexCaption3
 					p.
@@ -40,3 +83,54 @@ html
 		include includes/footer 
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
+	script
+		$(document).ready(function() {
+			$('#nav-toggle1').click(function(){
+			
+				$('#collapse1').slideDown('fast');
+				$('#collapse2').hide();
+				$('#collapse3').hide();
+				$('#collapse4').hide();
+				
+				$("#arrow1").css('display', 'block');
+				$("#arrow2").css('display', 'none');
+				$("#arrow3").css('display', 'none');
+				$("#arrow4").css('display', 'none');
+			});
+			
+			$('#nav-toggle2').click(function(){
+				$('#collapse2').slideDown('fast');
+				$('#collapse1').hide();
+				$('#collapse3').hide();
+				$('#collapse4').hide();
+				
+				$("#arrow1").css('display', 'none');
+				$("#arrow2").css('display', 'block');
+				$("#arrow3").css('display', 'none');
+				$("#arrow4").css('display', 'none');
+			});
+			
+			$('#nav-toggle3').click(function(){
+				$('#collapse3').slideDown('fast');
+				$('#collapse1').hide();
+				$('#collapse2').hide();
+				$('#collapse4').hide();
+				
+				$("#arrow1").css('display', 'none');
+				$("#arrow2").css('display', 'none');
+				$("#arrow3").css('display', 'block');
+				$("#arrow4").css('display', 'none');
+			});
+			
+			$('#nav-toggle4').click(function(){
+				$('#collapse4').slideDown('fast');
+				$('#collapse1').hide();
+				$('#collapse2').hide();
+				$('#collapse3').hide();
+				
+				$("#arrow1").css('display', 'none');
+				$("#arrow2").css('display', 'none');
+				$("#arrow3").css('display', 'none');
+				$("#arrow4").css('display', 'block');
+			});
+		});

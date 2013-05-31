@@ -488,3 +488,59 @@
 .increaseSpacing p{
 	line-height:2em;
 }
+
+/*
+toggle shit
+*/
+.round-border {
+	border: 1px solid #eee;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 5px;
+	background:#f1f1f1;
+}
+.collapse {
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top:10px;
+	height:100%;
+	box-shadow: 5px 5px 0px #888888;
+	background:white;
+}
+.nav-toggle{
+	margin:20px 80px 0 80px;
+	padding:0px;
+	border:none;
+	
+}
+#arrow1{
+	position:relative;
+	display:block;
+	margin:6px 0 -20px -568px;
+
+}
+#arrow2{
+	position:relative;
+	display:none;
+	margin:6px 0 -20px -188px;
+
+}
+#arrow3{
+	position:relative;
+	display:none;
+	margin:6px 0 -20px 192px;
+
+}
+#arrow4{
+	position:relative;
+	display:none;
+	margin:6px 0 -20px 572px;
+
+}
