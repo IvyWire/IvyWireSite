@@ -133,7 +133,7 @@
 
 .navbar2 .nav > li#Mobile > a:focus,
 .navbar2 .nav > li#Mobile > a:hover {
-	color: #FF4000;
+	color: #43b04d;
 }
 
 
@@ -487,10 +487,4 @@
 
 .increaseSpacing p{
 	line-height:2em;
-}
-
-#mobileAppHead{
-	margin-top:40px;
-	padding-left:20px;
-	font-size:22px;
 }
