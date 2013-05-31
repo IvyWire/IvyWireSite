@@ -76,67 +76,83 @@
 	text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 
-.navbar-inner {
-    background-color: #151515;
+.navbar-inner2 {
+    /*background-color: #FFFFFF;
     background-image: none;
-    background-repeat: no-repeat;
-    border: 1px solid black;
+    background-repeat: no-repeat;*/
+    /*border: 1px solid black;
     border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.067);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.067);*/
     min-height: 40px;
     padding-left: 20px;
     padding-right: 20px;
 	padding-top:10px;
-	padding-bottom:10px;
+	border:none;
+	border-radius:0px;
+}
+.navbar2{
+	padding-top:20px;
 }
 
-.navbar2 .nav {
+/*NavBar*/
+.nav3 {
+  margin-left: 0;
+  margin-bottom: 0px;
+  margin-top:0px;
+  list-style: none;
+}
+.navbar2 .nav3 {
   position: relative;
   left: 0;
   display: block;
   float: left;
   margin: 0 10px 0 0;
+  border:none;
 }
-.navbar2 .nav.pull-right {
+.navbar2 .nav3.pull-right {
   float: right;
   margin-right: 30px;
 }
-.navbar2 .nav > li {
+
+.navbar2 .nav3.pull-left {
+  float: left;
+  margin-right: 10px;
+}
+.navbar2 .nav3 > li {
   float: left;
   padding-left:3px;
   padding-right:3px;
 }
-.navbar2 .nav > li > a {
+
+.navbar2 .nav3 > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #FAFAFA;
+  color: #1C1C1C;
   font-size:14px;
-  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight:bold;
 }
 
-.navbar2 .nav > li > a:focus,
-.navbar2 .nav > li > a:hover {
+.navbar2 .nav3 > li > a:focus,
+.navbar2 .nav3 > li > a:hover {
   text-decoration: none;
-  background-color:#151515;
 }
 
-.navbar2 .nav > li#Home > a:focus,
-.navbar2 .nav > li#Home > a:hover {
+.navbar2 .nav3 > li#Home > a:focus,
+.navbar2 .nav3 > li#Home > a:hover {
 	color: #43b04d;
 }
 
-.navbar2 .nav > li#Web > a:focus,
-.navbar2 .nav > li#Web > a:hover {
+.navbar2 .nav3 > li#Web > a:focus,
+.navbar2 .nav3 > li#Web > a:hover {
 	color: #00BFFF;
 }
 
-.navbar2 .nav > li#Mobile > a:focus,
-.navbar2 .nav > li#Mobile > a:hover {
+.navbar2 .nav3 > li#Mobile > a:focus,
+.navbar2 .nav3 > li#Mobile > a:hover {
 	color: #43b04d;
 }
-
-
+/*NavBar ends*/
 
 
 .indexHead {
@@ -160,6 +176,7 @@
 	margin-right:100px;
 	/*background-color:#F2F2F2;*/
 	padding:30px;
+	padding-right:40px;
 	line-height:2em;
 	/*box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.4);*/
 	font-family: 'Ubuntu', sans-serif;
@@ -286,7 +303,7 @@
 .indexHeading {
 	background: #363739 url('/images/container-bg.jpg') repeat 50% 0;
 	color: #FAFAFA;
-	padding-top:100px;
+	padding-top:50px;
 	padding-bottom:0px;
 	font-family: 'Play', sans-serif;
 	box-shadow: inset 0 3px 20px -4px #000, inset 0 -3px 20px -4px #000;
@@ -304,6 +321,7 @@
 	padding-top:0px;
 	padding-bottom:0px;
 	margin-bottom:0px;
+	/*font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;*/
 }
 
 .imageShadow{
@@ -328,7 +346,6 @@
 .zeroTop{
 	margin-top:0px;
 	margin-bottom:50px;
-	margin-left:60px;
 }
 
 .secondTop {
@@ -359,8 +376,8 @@
 	position: absolute;
 	width: 100%;
 	height: 600px;
-	padding: 3% 0 2% 0;
-	margin-top: 35px;
+	padding: 2% 0 2% 0;
+	margin-top: 0px;
 	background: #363739 url('/images/container-bg.jpg') repeat 50% 0;
 	box-shadow: inset 0 3px 20px -4px #000, inset 0 -3px 20px -4px #000;
 }
