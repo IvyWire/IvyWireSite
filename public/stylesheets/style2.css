@@ -328,7 +328,9 @@
 	font-family: 'Play', sans-serif;
 	box-shadow: inset 0 3px 20px -4px #000, inset 0 -3px 20px -4px #000;
 }
-
+.pageHeading3{
+	margin-top:130px;
+}
 
 .indexHeading h1 {
 	padding-left:50px;
