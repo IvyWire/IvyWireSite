@@ -46,6 +46,7 @@ html
 						p Windows
 					button#nav-toggle4.nav-toggle(href='#collapse4')
 						p Blackberry
+				
 				img#arrow1(src='/images/arrow-up.png')
 				img#arrow2(src='/images/arrow-up.png')
 				img#arrow3(src='/images/arrow-up.png')
@@ -61,19 +62,13 @@ html
 					img.arrow-images(src='/images/arrow-up.png')
 				
 				#collapse1.collapse
-					h2 Heading 1
-					p Bla bla bla bla
+					include includes/android.jade
 				#collapse2.collapse(style='display: none;')
-					h2 Heading 2
-					p Bla bla bla bla number 2
+					include includes/ios.jade
 				#collapse3.collapse(style='display: none;')
-					h2 Heading 3
-					p Bla bla bla bla number 3
+					include includes/windows.jade
 				#collapse4.collapse(style='display: none;')
-					h2 Heading 4
-					p Bla bla bla bla number
-					p something
-					p something more
+					include includes/blackberry.jade
 		include includes/footer 
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
