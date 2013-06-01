@@ -36,16 +36,16 @@ html
 						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> Easy to use</span>
 						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> Exceeds your expectations</span>
 			center
-				h1.indexHead3.zeroTop Catch Phrase <span style='color:#43b04d;'>Here</span>
+				h1.indexHead3.zeroTop <span style='font-size:40px;'> Our Services</span>
 				div.row
 					button#nav-toggle1.nav-toggle(href='#collapse1')
-						p Android
+						p#Android1(style='color:green;') Android
 					button#nav-toggle2.nav-toggle(href='#collapse2')
-						p iOS
+						p#iOS1 iOS
 					button#nav-toggle3.nav-toggle(href='#collapse3')
-						p Windows
+						p#Windows1 Windows
 					button#nav-toggle4.nav-toggle(href='#collapse4')
-						p Blackberry
+						p#Blackberry1 Blackberry
 
 				div#arrow1
 					img.arrow-images(src='/images/arrow-up.png')
@@ -56,14 +56,15 @@ html
 				div#arrow4
 					img.arrow-images(src='/images/arrow-up.png')
 				
-				#collapse1.collapse
-					include includes/android.jade
-				#collapse2.collapse(style='display: none;')
-					include includes/ios.jade
-				#collapse3.collapse(style='display: none;')
-					include includes/windows.jade
-				#collapse4.collapse(style='display: none;')
-					include includes/blackberry.jade
+			#collapse1.collapse
+				include includes/android.jade
+			#collapse2.collapse(style='display: none;')
+				include includes/ios.jade
+			#collapse3.collapse(style='display: none;')
+				include includes/windows.jade
+			#collapse4.collapse(style='display: none;')
+				include includes/blackberry.jade
+			div.pageHeading
 		include includes/footer 
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
@@ -76,6 +77,10 @@ html
 				$('#collapse3').hide();
 				$('#collapse4').hide();
 				
+				$('#Android1').css('color', 'green')
+				$('#iOS1').css('color', 'black')
+				$('#Windows1').css('color', 'black')
+				$('#Blackberry1').css('color', 'black')
 			});
 			
 			$('#nav-toggle2').click(function(){
@@ -83,6 +88,11 @@ html
 				$('#collapse1').hide();
 				$('#collapse3').hide();
 				$('#collapse4').hide();
+				
+				$('#Android1').css('color', 'black')
+				$('#iOS1').css('color', 'green')
+				$('#Windows1').css('color', 'black')
+				$('#Blackberry1').css('color', 'black')
 				
 			});
 			
@@ -92,6 +102,11 @@ html
 				$('#collapse2').hide();
 				$('#collapse4').hide();
 				
+				$('#Android1').css('color', 'black')
+				$('#iOS1').css('color', 'black')
+				$('#Windows1').css('color', 'green')
+				$('#Blackberry1').css('color', 'black')
+				
 			});
 			
 			$('#nav-toggle4').click(function(){
@@ -100,5 +115,9 @@ html
 				$('#collapse2').hide();
 				$('#collapse3').hide();
 				
+				$('#Android1').css('color', 'black')
+				$('#iOS1').css('color', 'black')
+				$('#Windows1').css('color', 'black')
+				$('#Blackberry1').css('color', 'green')
 			});
 		});
