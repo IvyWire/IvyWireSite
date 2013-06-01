@@ -4,19 +4,22 @@ div.slideout
 		p Interested in working with us? E-mail us now to get a quote/set up an appointment!
 		br
 		div
-			form(action='/contact', name='contactus', id='contactus', method='post')
+			form(action='/contact', name='contactus', id='contactus', method='post', class='contactus')
 				div#clientName
 					label(for='name')
-						h4 Name
+						<span style='font-size:20px; text-align:left; font-weight:300'>Name</span>
 					input(name='name', type='text', value='', id='name', placeholder="FirstName LastName")
 				div#clientNumber
-					h4 Contact Phone Number
-					input(type="text", name="phone", placeholder="123-456-7890")
+					label(for='phone')
+						<span style='font-size:20px; font-weight:300'>Contact Phone Number</span>
+					input(name="phone", type="text", value='', id='phone', placeholder="123-456-7890")
 				div#clientEmail
-					h4 Contact E-mail
+					label(for='email')
+						<span style='font-size:20px; font-weight:300'>Contact E-mail</span>
 					input(name='email', type='text', value='', id='email', placeholder="yourid@domain.ca")
 				div#clientPlans
-					h4 Describe your plans/summarize your project
+					label(for='message')
+						<span style='font-size:20px; font-weight:300'>Contact E-mail</span>
 					textarea(name='message', id='message', placeholder="Pull corner to lengthen")
 
 				div#clientSubmit
