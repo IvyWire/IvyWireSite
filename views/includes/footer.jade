@@ -4,26 +4,43 @@ div.slideout
 		p Interested in working with us? E-mail us now to get a quote/set up an appointment!
 		br
 		div
-			form(action='/contact', name='contactus', id='contactus', method='post', class='contactus')
+			form(action='/contact', name='contactus', id='contactus', method='post', class='contactus', onsubmit='return validateForm()')
 				div#clientName
 					label(for='name')
 						<span style='font-size:20px; text-align:left; font-weight:300'>Name</span>
 					input(name='name', type='text', value='', id='name', placeholder="FirstName LastName")
+					
+					div#alert-name.alert
+						<span style='font-size:12px; text-align:left; font-weight:300';>Please enter your name</span>
+				
 				div#clientNumber
 					label(for='phone')
 						<span style='font-size:20px; font-weight:300'>Contact Phone Number</span>
 					input(name="phone", type="text", value='', id='phone', placeholder="123-456-7890")
+
+					div#alert-phone.alert
+						<span style='font-size:12px; text-align:left; font-weight:300';>Please enter your phone number</span>
+
+					
 				div#clientEmail
 					label(for='email')
 						<span style='font-size:20px; font-weight:300'>Contact E-mail</span>
 					input(name='email', type='text', value='', id='email', placeholder="yourid@domain.ca")
+
+					div#alert-email.alert
+						<span style='font-size:12px; text-align:left; font-weight:300';>Please enter your E-mail</span>
+
+					
 				div#clientPlans
 					label(for='message')
-						<span style='font-size:20px; font-weight:300'>Contact E-mail</span>
+						<span style='font-size:20px; font-weight:300'>Message</span>
 					textarea(name='message', id='message', placeholder="Pull corner to lengthen")
+					
+					div#alert-message.alert
+						<span style='font-size:12px; text-align:left; font-weight:300'; color:#FF0000'>Please enter a message</span>
 
 				div#clientSubmit
-					input(type='submit', value='Send')
+					input(type='submit', value='Send an Email!', class='a_demo_two')
 	div.clickme
 		center.
 			Contact us!
@@ -61,3 +78,49 @@ script
 			$(this).parent().animate({left:'-500px'}, {queue: false, duration: 500});}
 		});
 	});
+script
+
+	function validateForm()
+	{
+		var name=document.forms['contactus']['name'].value;
+		var phone=document.forms['contactus']['phone'].value;
+		var email=document.forms['contactus']['email'].value;
+		var message=document.forms['contactus']['message'].value;
+		
+		
+		if (name==null || name=='' || name=='FirstName LastName')
+		{
+			document.getElementById('alert-name').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-name').style.display='none';
+		
+		
+		if(phone==null || phone=='' || phone=='123-456-7890' || isNaN(phone))
+		{
+			document.getElementById('alert-phone').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-phone').style.display='none';
+		
+		
+		if(email==null || email=='' || email=='yourid@domain.ca')
+		{
+			document.getElementById('alert-email').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-email').style.display='none';
+			
+			
+		if(message==null || message=='' || message=='Pull corner to lengthen')
+		{
+			document.getElementById('alert-message').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-message').style.display='none';
+
+	}

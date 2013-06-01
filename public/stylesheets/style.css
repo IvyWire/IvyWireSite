@@ -105,9 +105,20 @@
 .pageHeading2{
 	margin-top:50px;
 }
+.pageHeading5{
+	margin-top:218px;
+}
 .contactus{
 	width: 220px;
 	text-align: left;
+}
+/*
+	check form divs
+*/
+.alert{
+	display:none;
+	color:#FF0000;
+	font-size:12px;
 }
 
 /*
@@ -160,9 +171,6 @@ border-radius: 6px;
 box-shadow: 0px 1px 0px #fff;
 }
 
-.pageHeading5{
-	margin-top:218px;
-}
 	
 	/* MARKETING CONTENT
     -------------------------------------------------- */

@@ -1,9 +1,79 @@
+div.footer3
+	div.container
+		div.row
+			div.span4
+				h1 Our Team
+				p.
+					We at IvyWire honor one thing above all else -- dedication. Our team will put their 
+					utmost effort into every part of your product. 
+			div.span4
+				h1 Contact Information
+				p.
+					
+			div.span4
+				h1 Email Us
+				p.
+					
+div.footer2
+	div.footerRow
+		center
+			p.
+				&#169; IvyWire Technical Solutions &#8226; Privacy Policy &#8226; Terms of Use
+
 script(src='/js/jquery-1.9.1.js')
 script(src='/js/jquery.html5-placeholder-shim.js')
+script
+	$(function () {
+		$(".clickme").click(function () {
+			if($(this).parent().css("left") == "-500px"){
+			$(this).parent().animate({left:'0px'}, {queue: false, duration: 500});
+		}else {
+			$(this).parent().animate({left:'-500px'}, {queue: false, duration: 500});}
+		});
+	});
+script
 
-footer
-	p.pull-right
-		a(href='#') Go to top
-	p Copyright 2013 Ivywire 
-		a(href='#') Privacy 
-		a(href='#') Terms 
+	function validateForm()
+	{
+		var name=document.forms['contactus']['name'].value;
+		var phone=document.forms['contactus']['phone'].value;
+		var email=document.forms['contactus']['email'].value;
+		var message=document.forms['contactus']['message'].value;
+		
+		
+		if (name==null || name=='' || name=='FirstName LastName')
+		{
+			document.getElementById('alert-name').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-name').style.display='none';
+		
+		
+		if(phone==null || phone=='' || phone=='123-456-7890' || isNaN(phone))
+		{
+			document.getElementById('alert-phone').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-phone').style.display='none';
+		
+		
+		if(email==null || email=='' || email=='yourid@domain.ca')
+		{
+			document.getElementById('alert-email').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-email').style.display='none';
+			
+			
+		if(message==null || message=='' || message=='Pull corner to lengthen')
+		{
+			document.getElementById('alert-message').style.display='block';
+			return false;
+		}
+		else
+			document.getElementById('alert-message').style.display='none';
+
+	}
