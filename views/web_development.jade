@@ -14,7 +14,7 @@ html
 			div.indexHeading#webDevHead
 				div.container
 					h1.firstIndex Web Services
-					h1.indexHead2.zeroTop <span style='color:#43b04d;'> Riht </span>
+					h1.indexHead2.zeroTop <span style='color:#43b04d;'> Designs that just work </span>
 			div.container
 				center
 					h1.indexHead3.zeroTop Websites done <span style='color:#43b04d;'> right </span>
@@ -32,17 +32,78 @@ html
 						p <span style='font-size:20px;color:#43b04d'> Choose us if you want a site that is: </span>
 						ul
 							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Efficient
-							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Fast
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Economical
+							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Marketable
 							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Graphically Appealing
-							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> 
 							li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> Worth the money you put in
 				center
 					h1.indexHead3.zeroTop <span style='color:#43b04d;'> Development </span> you can depend on
 				div.pageHeading
 				
-				div.webTabsLogos
+				div.webTabs
+					center
+						button#nav-toggle1.nav-toggle(href='#collapse1')
+							p#web1(style='font-size:17px;color:green;') DESIGNS
+						button#nav-toggle2.nav-toggle(href='#collapse2')
+							p#web2(style='font-size:17px;') 
+						button#nav-toggle3.nav-toggle(href='#collapse3')
+							p#web3(style='font-size:17px;') OUR TECHNOLOGIES
 					
+					#collapse1.collapse
+						include includes/designs.jade
+					#collapse2.collapse(style='display: none;')
+					#collapse3.collapse(style='display: none;')
+						include includes/technology.jade
+						
+			div.pageHeading	
 		include includes/footer.jade
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
+	script
+		$(document).ready(function() {
+			$('#nav-toggle1').click(function(){
+			
+				$('#collapse1').slideDown('fast');
+				$('#collapse2').hide();
+				$('#collapse3').hide();
+				
+				$('#web1').css('color', 'green')
+				$('#web2').css('color', 'black')
+				$('#web3').css('color', 'black')
+			});
+			
+			$('#nav-toggle2').click(function(){
+				$('#collapse2').slideDown('fast');
+				$('#collapse1').hide();
+				$('#collapse3').hide();
+				
+				$('#web1').css('color', 'black')
+				$('#web2').css('color', 'green')
+				$('#web3').css('color', 'black')
+				
+			});
+			
+			$('#nav-toggle3').click(function(){
+				$('#collapse3').slideDown('fast');
+				$('#collapse1').hide();
+				$('#collapse2').hide();
+				
+				$('#web1').css('color', 'black')
+				$('#web2').css('color', 'black')
+				$('#web3').css('color', 'green')
+				
+			});
+			
+			$('#nav-toggle4').click(function(){
+				$('#collapse4').slideDown('fast');
+				$('#collapse1').hide();
+				$('#collapse2').hide();
+				$('#collapse3').hide();
+				
+				$('#Android1').css('color', 'black')
+				$('#iOS1').css('color', 'black')
+				$('#Windows1').css('color', 'black')
+				$('#Blackberry1').css('color', 'green')
+			});
+		});
 	
