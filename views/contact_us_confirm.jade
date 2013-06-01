@@ -3,13 +3,28 @@ html
 	head
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
-
+		link(rel='stylesheet', href='/stylesheets/style2.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,400italic,500,700,300italic')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Play')
+	
 	body
 		include includes/header.jade
-		
-		div.pageHeading
-		div.container.pagePage
-			h2 Your message was sent ;)
-			
-			hr
-			include includes/footer2
+		div.indexHeading#mobileAppHead
+			div.container
+				h1.firstIndex Contact Us
+				h1.indexHead2.zeroTop <span style='color:#43b04d;'> Riht </span>
+
+		div.container
+			center
+				h1.indexHead3 Get in touch <span style='color:#43b04d;'>now!</span>
+
+			div.row.topBody.center-div
+				div.indexCaption
+					center
+						p.
+							<span style='font-size:20px;color:#00BFFF'> Your message was sent ;)</span> <br/>
+						div.pageHeading5
+				div.webTabsLogos
+		include includes/footer.jade
+	script(src='/js/bootstrap.min.js')
+	script(src='/js/jquery-1.9.1.js')
