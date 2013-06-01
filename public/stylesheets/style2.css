@@ -136,6 +136,7 @@
 .navbar2 .nav3 > li > a:focus,
 .navbar2 .nav3 > li > a:hover {
   text-decoration: none;
+  background-color:#FFFFFF;
 }
 
 .navbar2 .nav3 > li#Home > a:focus,
@@ -150,6 +151,16 @@
 
 .navbar2 .nav3 > li#Mobile > a:focus,
 .navbar2 .nav3 > li#Mobile > a:hover {
+	color: #43b04d;
+}
+
+.navbar2 .nav3 > li#Process  > a:focus,
+.navbar2 .nav3 > li#Process  > a:hover {
+	color: #43b04d;
+}
+
+.navbar2 .nav3 > li#Contact > a:focus,
+.navbar2 .nav3 > li#Contact > a:hover {
 	color: #43b04d;
 }
 /*NavBar ends*/
@@ -269,13 +280,13 @@
 	background-color: #151515;
 	color: #FAFAFA;
 	padding-left: 0px;
-	font-family: 'Bitter', serif;
+	font-family: 'Ubuntu', sans-serif;
 	margin-bottom:0px;
 }
 .footer2 h1{
 	color: #FFFFFF;
 	font-size: 18px;
-	font-style:italic;
+	/*font-style:italic;*/
 	font-weight:bold;
 }
 
@@ -293,14 +304,14 @@
 	background-color: #1C1C1C;
 	color: #FAFAFA;
 	padding-top:20px;
-	font-family: 'Bitter', serif;
+	font-family: 'Ubuntu', sans-serif;
 	margin-bottom:0px;
 }
 
 .footer3 h1{
     color: #FFFFFF;
 	font-size: 18px;
-	font-style:italic;
+	/*font-style:italic;*/
 	font-weight:bold;
 }
 
@@ -353,8 +364,7 @@
 }
 
 .zeroTop{
-	margin-top:0px;
-	margin-bottom:50px;
+	margin-bottom:40px;
 }
 
 .secondTop {
@@ -547,7 +557,8 @@ toggle shit
 }
 .nav-toggle p{
 	background-color:#FFFFFF;
-	font-size:30px;
+	font-size:22px;
+	font-family: 'Ubuntu', sans-serif;
 }
 #arrow1{
 	position:relative;
@@ -572,4 +583,13 @@ toggle shit
 	display:none;
 	margin:6px 0 -20px 572px;
 
+}
+
+.margin2{
+	margin-left:500px;
+}
+
+.margin3{
+	margin-left: 100px;
+	margin-right:300px;
 }
