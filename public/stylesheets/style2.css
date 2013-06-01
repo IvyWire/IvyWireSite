@@ -341,9 +341,6 @@
 .bannerPic{
 	float:right;
 	margin-top:9px;
-	-webkit-box-shadow: -1px -1px 6px rgba(255, 255, 255, 0.41);
-	-moz-box-shadow:    -1px -1px 6px rgba(255, 255, 255, 0.41);
-	box-shadow:         -1px -1px 6px rgba(255, 255, 255, 0.41);
 	border-radius: 7px;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
@@ -352,6 +349,13 @@
 	margin-top:130px;
 }
 
+.planPic{
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	margin-left:60px;
+	margin-right:50px;
+}
 .indexHeading h1 {
 	padding-left:50px;
 	font-weight:300;
