@@ -15,53 +15,11 @@ html
 			div.indexHeading#mobileAppHead
 				div.container
 					h1.firstIndex Mobile Apps
-					h1.indexHead2.zeroTop <span style='color:#43b04d;'> Riht </span>
+					h1.indexHead3.zeroTop <span style='color:#43b04d;'> Riht </span>
 		div.container
 			center
-				h1.indexHead2 Catch Phrase <span style='color:#43b04d;'>Here</span>
+				h1.indexHead3 Catch Phrase <span style='color:#43b04d;'>Here</span>
 				
-			div.round-border
-				h2 Jquery Toggle() to hide/show collapse content
-				div
-					center
-						button#nav-toggle1.nav-toggle(href='#collapse1')
-							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
-						button#nav-toggle2.nav-toggle(href='#collapse2')
-							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
-						button#nav-toggle3.nav-toggle(href='#collapse3')
-							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
-						button#nav-toggle4.nav-toggle(href='#collapse4')
-							img(src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTePaEHdzSfV2gJLnWDTP-BrdJPWKW-IMWCy4rT-hfzTtrRry7r', width='30', height='30')
-						br
-						img#arrow1(src='/images/arrow-up.png')
-						img#arrow2(src='/images/arrow-up.png')
-						img#arrow3(src='/images/arrow-up.png')
-						img#arrow4(src='/images/arrow-up.png')
-					
-					div#arrow1
-						img.arrow-images(src='/images/arrow-up.png')
-					div#arrow2
-						img.arrow-images(src='/images/arrow-up.png')
-					div#arrow3
-						img.arrow-images(src='/images/arrow-up.png')
-					div#arrow4
-						img.arrow-images(src='/images/arrow-up.png')
-					
-					#collapse1.collapse
-						h2 Heading 1
-						p Bla bla bla bla
-					#collapse2.collapse(style='display: none;')
-						h2 Heading 2
-						p Bla bla bla bla number 2
-					#collapse3.collapse(style='display: none;')
-						h2 Heading 3
-						p Bla bla bla bla number 3
-					#collapse4.collapse(style='display: none;')
-						h2 Heading 4
-						p Bla bla bla bla number
-						p something
-						p something more
-			
 			div.row.topBody
 				div.span6.indexCaption3
 					p.
@@ -79,7 +37,32 @@ html
 						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> Easy to use</span>
 						li <span style='font-size:13px;color:#43b04d'>&#x25BA;</span> <span style='font-size:18px;font-weight:bold'> Exceeds your expectations</span>
 			center
-				h1.indexHead2.zeroTop Catch Phrase <span style='color:#43b04d;'>Here</span>
+				h1.indexHead3.zeroTop Catch Phrase <span style='color:#43b04d;'>Here</span>
+				div.row
+					button#nav-toggle1.nav-toggle(href='#collapse1')
+						p &#8226;
+					button#nav-toggle2.nav-toggle(href='#collapse2')
+						p &#8226;
+					button#nav-toggle3.nav-toggle(href='#collapse3')
+						p &#8226;
+					button#nav-toggle4.nav-toggle(href='#collapse4')
+						p &#8226;
+				
+				
+				#collapse1.collapse
+					h2 Heading 1
+					p Bla bla bla bla
+				#collapse2.collapse(style='display: none;')
+					h2 Heading 2
+					p Bla bla bla bla number 2
+				#collapse3.collapse(style='display: none;')
+					h2 Heading 3
+					p Bla bla bla bla number 3
+				#collapse4.collapse(style='display: none;')
+					h2 Heading 4
+					p Bla bla bla bla number
+					p something
+					p something more
 		include includes/footer 
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
