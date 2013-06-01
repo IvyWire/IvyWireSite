@@ -12,11 +12,10 @@ html
 		div.indexHeading#mobileAppHead
 			div.container
 				h1.firstIndex Contact Us
-				h1.indexHead2.zeroTop <span style='color:#00BFFF;'> Riht </span>
-
+				div.pageHeading2
 		div.container
 		
-			div.row.topBody.center-div
+			div.row.center-div
 				div.indexCaption
 					center
 						p.
@@ -31,15 +30,12 @@ html
 								input(name='name', type='text', value='', id='name', placeholder="FirstName LastName")
 								
 								div#alert-name.alert
-									<span style='font-size:12px; text-align:left; font-weight:300';>Please enter your name</span>
+									<span style='font-size:12px; text-align:left; font-weight:300';>Please enter your name </span>
 							
 							div#clientNumber
 								label(for='phone')
 									<span style='font-size:20px; font-weight:300'>Contact Phone Number</span>
 								input(name="phone", type="text", value='', id='phone', placeholder="123-456-7890")
-
-								div#alert-phone.alert
-									<span style='font-size:12px; text-align:left; font-weight:300';>Please enter your phone number</span>
 
 								
 							div#clientEmail
@@ -54,7 +50,7 @@ html
 							div#clientPlans
 								label(for='message')
 									<span style='font-size:20px; font-weight:300'>Message</span>
-								textArea(name='message', id='message', placeholder="Pull corner to lengthen")
+								textArea(name='message', id='message', placeholder="Tell us about your plans!")
 								
 								div#alert-message.alert
 									<span style='font-size:12px; text-align:left; font-weight:300'; color:#FF0000'>Please enter a message</span>
@@ -64,7 +60,7 @@ html
 
 				div.webTabsLogos
 			div.pageHeading
-		include includes/footer2.jade
+		include includes/footer
 	script(src='/js/bootstrap.min.js')
 	script(src='/js/jquery-1.9.1.js')
 	
